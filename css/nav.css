@@ -1,0 +1,124 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Container */
+  .nav-container {
+    display: flex;
+    justify-content: center; /* center menu horizontally */
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #1a1a1a;
+    color: #fff;
+    position: relative;
+  }
+  
+  /* Menu */
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  /* Links */
+  .nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+  }
+  
+  .nav-menu li a:hover {
+    color: #f39c12;
+  }
+  
+  /* Booking button */
+  .booking-btn {
+    background: #f39c12;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+    transition: background 0.3s;
+  }
+  
+  .booking-btn:hover {
+    background: #e67e22;
+  }
+  
+  /* Burger icon */
+  .nav-toggle {
+    display: none;
+  }
+  
+  .nav-toggle-label {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    width: 30px;
+    height: 25px;
+  }
+  
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: '';
+    display: block;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  
+  .nav-toggle-label span::before {
+    transform: translateY(-8px);
+  }
+  
+  .nav-toggle-label span::after {
+    transform: translateY(5px);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-toggle-label {
+      display: flex;
+      position: relative;
+      margin: 0 auto; /* center burger */
+    }
+  
+    .nav-menu {
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%); /* center menu */
+      background: #1a1a1a;
+      flex-direction: column;
+      gap: 0;
+      display: none;
+      min-width: 200px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  
+    .nav-menu li {
+      border-bottom: 1px solid #333;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-menu li a {
+      display: block;
+      padding: 1rem;
+    }
+  
+    /* Show menu when checked */
+    .nav-toggle:checked + .nav-toggle-label + .nav-menu {
+      display: flex;
+    }
+  }

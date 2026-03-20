@@ -1,0 +1,178 @@
+.contact-box {
+  max-width: 400px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: #4CAF50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+.text {
+  font-size: 14px;
+  color: #333;
+}
+
+.social_media_link {
+    text-align: center;
+}
+
+.social_media_image {
+    width: 40%;
+}
+
+.qr_code {
+    width: 20%;
+}
+
+.line {
+    width: 50%;
+}
+
+.hours {
+    width: 50%;
+}
+
+.tel_address {
+    width: 20%;
+}
+
+.header {
+    text-align: center
+}
+
+.left {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.parallax {
+    /* Set height of the section */
+    height: 500px;
+  
+    /* Background image */
+    background-image: url('../images/bg.jpg');
+  
+    /* Parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Optional: center any text inside */
+    color: white;
+    font-size: 2em;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  }
+
+  .para {
+    /* Set height of the section */
+    height: 500px;
+  
+    /* Background image */
+    background-image: url('../images/para.jpg');
+  
+    /* Parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Optional: center any text inside */
+    color: white;
+    font-size: 2em;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  }
+
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500;700&display=swap');
+
+/* Global styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #222; /* dark text for readability */
+    line-height: 1.6;
+}
+
+/* Headings (h1, h2, h3, etc.) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* Example button style using the fonts */
+.button {
+    text-decoration: none;
+    padding: 30px;
+    background-color: #222; /* dark background */
+    color: #fff; /* white text */
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #444;
+}
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .gallery-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .gallery-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .gallery-item img {
+    max-width: 100%;
+    width: 500px;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+
+  .description {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  @media (max-width: 768px) {
+    .gallery-item {
+      flex-direction: column !important;
+    }
+
+    .gallery-item img {
+      width: 100%;
+    }
+
+    .description {
+      text-align: center;
+    }
+  }
